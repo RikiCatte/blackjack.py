@@ -38,13 +38,13 @@ def draw(deck):
 def return_score(hand):
     score = 0
     for card in hand:
-        score += card[1]  # Since the hand now stores tuples, we use card[1] to get the score
+        score += card[1] 
     return score
 
 def player(deck):
     hand = []
     card = draw(deck)
-    if card[0] is not None:  # Check if the deck is not empty
+    if card[0] is not None:
         hand.append(card)
     done = False
 
